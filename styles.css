@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding-left: 250px;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0;
+}
+
+.navTitle {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.navTitle > img {
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navTitle > img:hover {
+  background-color: #e7e7e7;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navLogo img {
+  margin-right: 5px;
+}
+.navLogo h1 {
+  color: #5f6368;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.navCompose {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 16px;
+  margin-left: 7px;
+  cursor: pointer;
+  width: 60%;
+  background-color: #c2e7ff;
+}
+.navCompose:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.navCompose img {
+  margin-right: 15px;
+}
+.navCompose h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #001d35;
+}
+
+.navOptions {
+  margin: 15px 0;
+}
+.navBtn:first-of-type {
+  color: #001d35;
+  background-color: #d7e6ff;
+}
+.navBtn:first-of-type:hover {
+  color: #001d35;
+  background-color: #d7e6ff;
+}
+.navBtn {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px 6px 25px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  cursor: pointer;
+}
+.navBtn:hover {
+  background-color: #e7e7e7;
+}
+.navBtn img {
+  margin-right: 17px;
+}
+.navBtn:first-of-type p {
+  font-weight: bolder;
+}
+.navBtn p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.num {
+  margin-left: auto;
+}
+
+.navLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-left: 25px;
+}
+.navLabel h1 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navLabel img {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navLabel img:hover {
+  background-color: #e7e7e7;
+}
+
+.main {
+  padding: 10px;
+}
+
+.mainTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #eaf1fb;
+  padding: 5px 7px;
+  border-radius: 7px;
+}
+
+.search img {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search img:hover {
+  background-color: #dadce0;
+}
+
+.search input {
+  width: 620px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.search input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.acct {
+  display: flex;
+  align-items: center;
+}
+
+.acct img {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.acct img:last-of-type {
+  padding: 10px;
+  border-radius: 50%;
+}
+.acct img:last-of-type:hover {
+  background-color: #dadce0;
+}
+
+.acct p {
+  font-size: 20px;
+  padding-top: 3px;
+  cursor: pointer;
+  margin-right: 15px;
+  background-color: rgb(179, 22, 179);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mainContent {
+  margin: 10px 0;
+  display: flex;
+}
+
+.mails {
+  background-color: #fff;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.mailsTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.checkbox,
+.topLeft,
+.topRight {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  padding: 15px 8px;
+  border-radius: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.checkbox:hover {
+  background-color: #f1f1f1;
+}
+.checkbox input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.topLeft > img {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.topLeft > img:hover {
+  background-color: #f1f1f1;
+}
+
+.topRight p {
+  padding: 10px 22px;
+  border-radius: 7px;
+  margin-right: 20px;
+  font-size: 12px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.topRight p:hover {
+  background-color: #f1f1f1;
+}
+.topRight img {
+  margin-right: 20px;
+}
+
+.emails {
+  overflow-y: auto;
+  max-height: 490px;
+}
+
+.mailBtns {
+  display: flex;
+}
+
+.mailBtn {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 250px;
+  position: relative;
+  cursor: pointer;
+}
+.mailBtn:hover {
+  background-color: #f1f1f1;
+}
+.mailBtn span {
+  width: 90%;
+  height: 3px;
+  background-color: #0b57d0;
+  position: absolute;
+  bottom: 0;
+  left: 4%;
+  border-radius: 10px;
+}
+
+.mailBtn:first-of-type h1 {
+  color: #0b57d0;
+}
+.mailBtn h1 {
+  font-size: 14px;
+}
+
+.mailBtn img {
+  margin-right: 15px;
+}
+
+.btnContent {
+  display: flex;
+  flex-direction: column;
+}
+.btnContent > p {
+  font-size: 12px;
+}
+.mailPromo {
+  display: flex;
+  align-items: center;
+}
+.mailPromo h1 {
+  margin-right: 8px;
+}
+.mailPromo p {
+  font-size: 12px;
+  padding: 0 4px;
+  background-color: #188038;
+  color: #fff;
+  border-radius: 20px;
+}
+.social p {
+  background-color: #1a73e8;
+}
+
+.mssg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-top: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.mssg:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.mssgTitle,
+.mssgBody {
+  display: flex;
+  align-items: center;
+}
+.mssgTitle h1 {
+  font-size: 14px;
+  margin-left: 3px;
+}
+.mssgTitle img:first-of-type {
+  cursor: grab;
+  padding: 0;
+}
+.mssgTitle img {
+  padding: 10px;
+  border-radius: 50%;
+}
+.mssgTitle img:hover {
+  background-color: #f1f1f1;
+}
+.mssgTitle input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.mssgBody p {
+  letter-spacing: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+.icons img {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.icons img:nth-child(5) {
+  margin-top: 30px;
+}
+.icons img:last-of-type {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.icons img:hover {
+  background-color: #dadce0;
+}
