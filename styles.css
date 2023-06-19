@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 *,
 *::after,
@@ -102,7 +102,7 @@ body {
   margin-right: 17px;
 }
 .navBtn:first-of-type p {
-  font-weight: bolder;
+  font-weight: 700;
 }
 .navBtn p {
   font-size: 12px;
@@ -121,7 +121,7 @@ body {
 }
 .navLabel h1 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .navLabel img {
